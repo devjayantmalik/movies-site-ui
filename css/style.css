@@ -1,0 +1,41 @@
+/* My Custom styles related to movie */
+section {
+  margin-bottom: 50px;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.heading {
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+.movie-card {
+  width: 25rem;
+  border: 2px solid black;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.card-body {
+  padding: 10px;
+  border-top: 2px solid black;
+  background-color: transparent;
+}
+
+.poster {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.video-player {
+  height: 600px;
+  width: 100%;
+  background-image: url("../images/movie.jpg");
+  margin-bottom: 10px;
+}
