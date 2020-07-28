@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <title>Add Movie</title>
+  </head>
+  <body class="bg-dark text-white">
+    <main class="container mt-3">
+      <h1>Add your new movie using this page.</h1>
+      <hr />
+
+      <div class="row">
+        <div class="col-8">
+          <form class="my-5 mx-5">
+            <div class="form-group">
+              <label for="title">Movie title</label>
+              <input
+                id="title"
+                name="title"
+                type="text"
+                class="form-control"
+                placeholder="Enter movie name e.g The Avengers"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="story">Movie story</label>
+              <textarea
+                id="story"
+                name="story"
+                class="form-control"
+                placeholder="Enter movie story e.g The Avengers......"
+                rows="4"
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="filename">Movie filename</label>
+              <select name="filename" id="filename" class="form-control">
+                <option value="">Select Your movie</option>
+                <option value="avengers.mp4">avengers.mp4</option>
+                <option value="4343.mp4">4343.mp4</option>
+                <option value="force.mp4">force.mp4</option>
+                <option value="maching-hawking.mp4">machine-hawking.mp4</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="rating">Movie rating</label>
+              <input
+                id="rating"
+                name="rating"
+                type="text"
+                class="form-control"
+                placeholder="Enter movie rating e.g 4"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="release_date">Movie Release Date</label>
+              <input
+                id="release_date"
+                name="release_date"
+                type="date"
+                class="form-control"
+                placeholder="Select Movie release date"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="genre">Movie Genre</label>
+              <select name="genre" id="genre" class="form-control">
+                <option value="">Select a Genre</option>
+                <option value="1">Action</option>
+                <option value="2">Comedy</option>
+                <option value="3">Thriller</option>
+                <option value="4">SciFi</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="cinema">Movie Cinema</label>
+              <select name="cinema" id="cinema" class="form-control">
+                <option value="">Select a Cinema</option>
+                <option value="1">Hollywood</option>
+                <option value="2">Bollywood</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="resolution">Movie Resolution</label>
+              <select name="resolution" id="resolution" class="form-control">
+                <option value="">Select a Resolution</option>
+                <option value="1">FULL HD 720P</option>
+                <option value="2">Standard Quality 480P</option>
+                <option value="3">Low Quality 360P</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="image">Movie Image</label>
+              <select name="image" id="image" class="form-control">
+                <option value="">Select a Image</option>
+                <option value="1">1.jpg</option>
+                <option value="2">2.jpg</option>
+                <option value="3">3.jpg</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              Add Genre
+            </button>
+          </form>
+        </div>
+        <div class="col">
+          <h2>Your selected image will appear here</h2>
+          <img
+            src="images/movie.jpg"
+            width="500"
+            height="700"
+            style="object-fit: cover;"
+          />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
